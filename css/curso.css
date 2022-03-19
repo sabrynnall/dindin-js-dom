@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 85px;
+    background-color: orange;
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header nav a {
+    color: #FFF;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin:  0 auto;
+    width: 100%;
+}
+
+#logo_cabecalho {
+    margin-left: 30px;
+}
+
+#menu_opcoes {
+    display: flex;
+    justify-items: flex-end;
+    margin-right: 30px;
+}
+
+/* RESPONSIVIDADE DO MENU*/
+
+@media (max-width: 1000px) {
+    header {
+        height: 50px;
+    }
+    #logo_cabecalho {
+        margin-left: 10px;
+    }
+    #img_logo {
+        width: 80px;
+    }
+
+    #menu_opcoes {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    header nav a {
+        padding: 0px 5px;
+    }
+}
+
+section {
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* FIM DA ESTILIZAÇÃO DA SESSÃO*/
+
+#introducao {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+#esquerdo {
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+
+#direito {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FF4081;
+    font-size: 50px;
+}
+
+h2 {
+    color: #FF4081;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+p {
+    margin: 10px 0px;
+    line-height: 130%;
+}
+
+/*RESPONSIVIDADE DA INTRODUÇÃO*/
+
+@media (max-width: 1000px) {
+    #introducao {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    #esquerdo {
+        width: 100%;
+    }
+
+    #direito {
+        display: none;
+    }
+
+    p {
+        margin: 15px 5px;
+        font-size: 12px;
+    }
+
+    h2 {
+        margin: 5px;
+    }
+}
+
+/* ESTILIZAÇÃO DA SESSÃO AULAS*/
+
+#cursos {
+    padding: 10px 50px;
+}
+
+.aulas_opcoes {
+    border-bottom: #C4C4C4 solid 3px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 50px 0;
+    align-items: center;
+    text-align: justify;
+}
+
+.aula_iii {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 50px 0;
+    align-items: center;
+    text-align: justify;
+}
+
+#retangulo {
+    width: 700px;
+    height: 380px;
+    margin: 20px;
+    background-color: #F6F6F6;
+    border: #C4C4C4 solid 2px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#triangulo, #circulo {
+    position: absolute;
+}
+
+#triangulo {
+    margin-left: 10px;
+}
+
+/* RESPONSIVIDADE DA SESSÃO AULAS */
+
+@media (max-width: 1000px) {
+    body {
+        overflow-x: hidden
+    }
+
+    #aulas {
+        padding: 10px;
+    }
+
+    .aulas_opcoes {
+        display: block;
+        font-size: 13px;
+        margin-top: -50px;
+        padding-bottom: 30px;
+    }
+
+    #retangulo {
+        width: calc(100% - 10px);
+        margin-left: 1px;
+        height: 200px;
+    }
+
+    .aula_iii {
+        display: block;
+        font-size: 13px;
+        margin-top: -50px;
+        padding-bottom: 30px;
+    }
+}
+
+footer {
+    background-color: #419488;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo_rodape {
+    margin-left: 30px;
+}
+
+#rodape {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rodape_outras_opcoes {
+    margin-right: 30px;
+}
+
+#rodape_opcoes {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.rodape_opcoes {
+    padding: 5px 0px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#outras_opcoes {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.outras_opcoes {
+    padding: 5px 25px;
+    border-radius: 25px;
+    border: #FFF solid 1px;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE DO RODAPÉ*/
+
+@media (max-width: 1000px) {
+    footer {
+        height: 110px;
+    }
+    footer img {
+        width: 120px;
+    }
+    #logo_rodape {
+        margin-left: 10px;
+    }
+    #img_rodape {
+        width: 80px;
+    }
+    
+    .rodape_opcoes, .outras_opcoes {
+        font-size: 12px;
+    }
+
+    #rodape_outras_opcoes {
+        margin-right: 10px;
+        text-align: center;
+     }
+
+    .outras_opcoes {
+        padding: 2px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 85px;
+    background-color: red;
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header nav a {
+    color: #FFF;
+    padding: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin:  0 auto;
+    width: 100%;
+}
+
+#logo_cabecalho {
+    margin-left: 30px;
+}
+
+#menu_opcoes {
+    display: flex;
+    justify-items: flex-end;
+    margin-right: 30px;
+}
+
+/* RESPONSIVIDADE DO MENU*/
+
+@media (max-width: 1000px) {
+    header {
+        height: 50px;
+    }
+
+    #logo_cabecalho {
+        margin-left: 10px;
+    }
+
+    #img_logo {
+        width: 80px;
+    }
+
+    #menu_opcoes {
+        margin-right: 10px;
+    }
+
+    header nav a {
+        padding: 0px 5px;
+        font-size: 12px;
+    }
+}
+
+
+
+section {
+    max-width: 1500px;
+    margin: 100px auto;
+}
+
+#introducao {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #FF4081;
+    font-size: 50px;
+}
+
+h2 {
+    color: #FF4081;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+p {
+    margin: 25px 0px;
+}
+
+#saber_mais {
+    border: #FF4081 solid 1px;
+    border-radius: 30px;
+    padding: 5px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FF4081;
+}
+
+/*RESPONSIVIDADE DA INTRODUÇÃO*/
+
+@media (max-width: 1000px) {
+    #introducao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lado_direito {
+        display: none;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 15px 0px;
+    }
+}
+
+#investimentos_poupando_independencia {
+    display: flex;
+    gap: 30px;
+    margin: 200px auto;
+    max-width: 1500px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.comecar_agora {
+    background-color: #FF4081;
+    padding: 10px 30px;
+    border-radius: 30pc;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.titulo {
+    max-width: 1500px;
+    margin: 100px auto auto;
+}
+
+h3 {
+    color: #009688;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+/* RESPONSIVIDADE DO INVESTIMENTOS | POUPANÇA | INDEPENDENCIA*/
+
+@media (max-width: 1000px) {
+    #investimentos_poupando_independencia {
+        font-size: 13px;
+        margin-top: -50px;
+        padding-bottom: 30px;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 0px 10px;
+    }
+
+    #investimentos, #poupando, #independencia{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    #independencia {
+        width: 400px;
+    }
+
+    #investimentos_poupando_independencia::-webkit-scrollbar {
+        background-color: #FFF;
+        height: 10px;
+    }
+
+    #investimentos_poupando_independencia::-webkit-scrollbar-thumb {
+        background-color: #009688;
+        border-radius: 20px;
+    }
+}
+
+#falam_sobre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px auto;
+    max-width: 1500px;
+}
+
+.depoimentos {
+    width: 570px;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+img {
+    margin-right: 20px;
+}
+
+/* RESPONSIVIDADE DE FALAM SOBRE*/
+@media (max-width: 1000px) {
+    #falam_sobre {
+        margin: 10px 5px 110px 5px;
+    }
+
+    .titulo {
+        margin: 20px auto auto;
+        text-align: center;
+    }
+
+    h3 {
+        margin-left: 10px;
+        margin-top: -100px;
+    }
+
+    .depoimentos {
+        display: flex;
+        align-items: center;
+        padding: 10px 5px;
+    }
+    
+}
+
+#mais_conteudo {
+    margin: 10px auto;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo {
+    padding: 10px 50px;
+}
+
+#retangulo {
+    width: 319px;
+    height: 193px;
+    background-color: #C4C4C4;
+}
+
+h4 {
+    color: #009688;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+#todos_posts {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    text-align: center;
+    border: #FF4081 solid 1px;
+    border-radius: 30px;
+    padding: 5px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FF4081;
+
+}
+
+/* RESPONSIVIDADE DO MAIS CONTÉUDO*/
+
+@media (max-width: 1000px) {
+    #mais_conteudo {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #mais_conteudo::-webkit-scrollbar {
+    background-color: #FFF;
+    height: 10px;
+    }
+
+    #mais_conteudo::-webkit-scrollbar-thumb {
+        background-color: #009688;
+        border-radius: 20px;
+    }
+
+    .conteudo {
+        padding: 10px 10px;
+    }
+}
+
+footer {
+    background-color: #419488;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo_rodape {
+    margin-left: 30px;
+}
+
+#rodape {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rodape_outras_opcoes {
+    margin-right: 30px;
+}
+
+#rodape_opcoes {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.rodape_opcoes {
+    padding: 5px 0px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#outras_opcoes {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.outras_opcoes {
+    padding: 5px 25px;
+    border-radius: 25px;
+    border: #FFF solid 1px;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE DO RODAPÉ*/
+
+@media (max-width: 1000px) {
+    footer {
+        height: 110px;
+    }
+
+    footer img {
+        width: 120px;
+    }
+
+    #logo_rodape {
+        margin-left: 10px;
+    }
+
+    #img_rodape {
+        width: 80px;
+    }
+    
+    .rodape_opcoes, .outras_opcoes {
+        font-size: 12px;
+    }
+
+    #rodape_outras_opcoes {
+        margin-right: 10px;
+        text-align: center;
+     }
+
+    .outras_opcoes {
+        padding: 2px;
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+

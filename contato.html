@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Dindin</title>
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="shortcut icon" href="/imagens/dindin_icone.png" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family= Ubuntu:wght@400;700 & display=swap');
+
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url(/fontes/Ubuntu-Regular.ttf);
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id='cabecalho'>
+            <div id='logo_cabecalho'>
+                <a href="/index.html"><img id='img_logo' src="/imagens/logo-header.png" width="150px"
+                        alt="logo do dindin"></a>
+            </div>
+
+            <div id='menu_opcoes'>
+                <nav>
+                    <a href="#">CURSOS</a>
+                    <a href="/blog.html">BLOG</a>
+                    <a href="/contato.html">CONTATO</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section id='introducao'>
+            <h1>
+                Contato
+            </h1>
+        </section>
+
+        <section class='formulario'>
+            <div id="formulario">
+                <form action="contato.html" method="post">
+                    <input type="text" required placeholder="nome"><br>
+                    <input type="email" required placeholder="e-mail">
+                    <textarea>sua mensagem</textarea> <br>
+                    <button id='enviar'>Enviar</button>
+                </form>
+            </div>
+
+            <div class="img">
+                <img id='img_contato' src="/imagens/ilustra-contato.png" width="300px"
+                    alt="fala com a dindin educação financeira">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div id='rodape'>
+            <div id='logo_rodape'>
+                <img id='img_rodape' src="/imagens/logo-footer.png" alt="logo da dindin" width="200px">
+            </div>
+
+            <div id='opcoes_rodape'>
+                <nav id='rodape_opcoes'>
+                    <a class="rodape_opcoes" href="/cursos.html">cursos</a>
+                    <a class="rodape_opcoes" href="/blog.html">blog</a>
+                    <a class="rodape_opcoes" href="/contato.html">contatos</a>
+                </nav>
+            </div>
+
+            <div id='rodape_outras_opcoes'>
+                <nav id='outras_opcoes'>
+                    <a class='outras_opcoes'>quero ser professor</a>
+                    <br>
+                    <a class='outras_opcoes'>aqui tem outro link</a>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

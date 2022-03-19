@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#modal {
+    width: 800px;
+    height: 500px;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 100px auto;
+    display: block;
+}
+
+.fechar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#fechar {
+    border: #000000 solid 1px;
+    padding: 5px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 22px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.investimentos {
+    display: flex;
+}
+
+h1 {
+    color: #FF4081;
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+p {
+    margin: 10px 20px 20px 10px;
+    text-align: justify;
+}
+
+img {
+    margin: 20px;
+}
+
+.link {
+    margin-top: 400px;
+    background-color: #C4C4C4;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*RESPONSIVIDADE DO MODAL*/
+
+@media (max-width: 1000px) {
+    #modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        width: 95%;
+        height: 530px;
+        margin: 80px 10px 40px 10px; 
+    }
+
+    #fechar {
+        margin: 5px;
+    }
+
+    .investimentos {
+        display: block;
+    }
+
+    #img_investimentos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    p {
+        margin: 5px 0px 50px;
+        font-size: 12px;
+    }
+}
